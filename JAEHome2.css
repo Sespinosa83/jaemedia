@@ -1,0 +1,358 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+* {
+  box-sizing:border-box;
+  font-family: Baskerville, "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+body{
+	background-color: black;
+}
+
+p {
+	width: auto;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+
+h1{
+	color: goldenrod;
+	margin-left: 30px;
+	margin-bottom: 0px;
+}
+
+h2 {
+	text-align: center;
+	padding: 10px 0px;
+}
+
+img {
+	width: 20%;
+	height: 45%;
+}
+.titlename img{
+	width: 100px;
+	height: 100px;
+	border-radius: 10px 10px;
+}
+
+a.IG {
+	color: white;
+	text-decoration: none;
+}
+
+a.IG:hover {
+	color: #AB1D58;
+}
+
+a.FB {
+	color: white;
+	text-decoration: none;
+}
+
+a.FB:hover {
+	color: blue;
+}
+
+a.YT {
+	color: white;
+	text-decoration: none;
+}
+
+a.YT:hover {
+	color:#bb0000;
+}
+
+.row {
+  display: -ms-flexbox; /* IE 10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE 10 */
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+  -ms-flex: 50%; /* IE 10 */
+  flex: 50%;
+  padding: 4px;
+  text-align: center;
+  
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+.borderbottom {
+	border-bottom: 2px solid white;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px 0px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar{
+	margin-right: 50px;
+}
+
+.navbar a {
+  float: right;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: darkgoldenrod;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  color: darkgoldenrod;
+}
+
+.socialbutton{
+	display: block;
+	padding-top: 10px;
+	text-align: center;
+}
+.socialbutton .fa {
+	padding: 10px;
+	font-size: 45px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.socialbutton .fa:hover {
+    opacity: 0.5;
+}
+
+.socialbutton .fa-facebook {
+	font-size: 20px;
+	border-radius: 20px;
+	background: blue;
+	color: white;
+}
+.socialbutton .fa-youtube {
+	font-size: 20px;
+	border-radius: 20px;
+	background: #bb0000;
+	color: white;
+}
+.socialbutton .fa-instagram {
+	font-size: 20px;
+	border-radius: 20px;
+	background: #AB1D58;
+	color: white;
+}
+
+.footer {
+  max-width:1200px;
+  width:98%;
+  height:50px;
+  margin:0px auto;
+  overflow:hidden;
+  border-top:1px solid #ccc;
+}
+
+.copy {
+    float:right;
+    font-style:italic;
+    color:#888;
+    padding: 1% 1% 0 0;
+  }
+
+.main-photo {
+	height: 300px;
+	width: 300px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	padding: 10px;
+  	
+}
+
+.main-info{
+	padding: 20px;
+}
+
+/*-----------The styles for moble versions of the site--------------*/
+
+@media only screen 
+	and (max-width : 1024px) {
+		.span{
+			margin-bottom: .5em;
+			padding: 0 1em;
+		}
+		img{
+			width: 250px;
+			height: 300px;
+		}
+		.titlename img{
+			width: 100px;
+			height: 100px;
+}
+		.row{
+			margin-bottom: .5em;
+		}
+		
+		p{
+			font-size: 25px;
+			
+		}
+		.titlename{
+			font-size: 60px;
+			
+		}
+		.navbar a{
+			font-size: 30px;
+		}
+		a.YT, a.IG, a.FB{
+			font-size: 50px;
+		}
+		.socialbutton .fa {
+			padding: 10px;
+			font-size: 45px;
+			width: 60px;
+			height: 60px;
+			text-align: center;
+			text-decoration: none;
+			margin: 4px 4px;
+}
+}
+
+@media only screen 
+	and (max-width : 768px) {
+		
+		.borderbottom{
+			width: 100%;
+		}
+		span {
+			margin-bottom: .5em;
+			padding: 0 1em;
+		}
+		img{
+			width: 30%;
+			height: 40%;
+		}
+		
+		.titlename img{
+			width: 75px;
+			height: 75px;
+}
+		
+		header{
+			font-size: 25px;
+		}
+		
+		p{
+			font-size: 25px;
+			text-align: center;
+		}
+		.titlename{
+			font-size: 60px;
+			text-align: center;
+		}
+		#mob-loss1 {
+		display: none;
+	}
+		#mob-loss2 {
+		display: none;		
+	}
+		#mob-loss3 {
+			
+		display: none;
+	}
+		#mob-loss4 {
+		display: none;
+	}
+}
+
+
+
+
+@media only screen 
+	and (max-width : 430px) {
+		
+body{
+	width: 100%;
+		}
+
+.row{
+	width: 100%;
+	margin: auto;
+		}		
+		
+h1.titlename {
+	margin-left: 0px;
+		}
+
+p{
+	
+    color: white;
+    font-size: 30px;
+		}
+.active{
+		display: none;
+		}		
+		
+.navbar{
+	padding-bottom: 10px;
+	margin-right: 50px;
+}
+.navbar a {
+  color: white;
+  padding: 2px 5px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+.footer {
+    padding:3%;
+	width: 100%;
+	text-align: center;
+}
+		
+.copy{
+	float: none;
+		}
+		
+.borderbottom {
+	width: 90%;
+		}
+span {
+	margin-bottom: .5em;
+	padding: 0 1em;
+		}
+img{
+	width: 190px;
+	height: 200px;
+		}
+		
+.titlename img{
+	width: 75px;
+	height: 75px;
+}
+#mob-loss1 {
+	display: none;
+		}
+#mob-loss2 {
+	display: none;
+		}
+#mob-loss3 {
+	display: none;
+		}
+#mob-loss4 {
+	display: none;
+		}
+}

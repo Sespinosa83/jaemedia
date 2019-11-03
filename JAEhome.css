@@ -1,0 +1,149 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.top-header{
+	padding: 0;
+}
+
+.titlename img{
+	width: 100px;
+	height: 100px;
+	margin-left: 30px;
+	border-radius: 10px 10px;
+}
+
+
+/* Photo/video/dir */
+p.titlename{
+	width: 100%;
+    margin-left: 10px;
+	margin-bottom: 0PX;
+	font-size: 35px;
+	font-weight: 500;
+	color: goldenrod;
+}
+ 
+
+/* Style the link */
+ a{
+	padding: 10px 10px 10px 10px;
+	margin-top: 10px;
+	color: goldenrod;
+	text-decoration: none;
+}
+a:hover{
+	opacity: 0.7;
+}
+
+.enterbutton{
+	margin-left: 400px;
+	background-color: white;
+	width: 205px;
+	border-radius: 20px 0px;
+	font-size: 40px;
+}
+
+/* social media buttons */
+
+.socialbutton{
+	display: block;
+	padding-top: 10px;
+	margin-left: 300px;
+}
+/* James Yu */
+h2.titlename{
+    margin-left: 100px;
+	margin-top: 50px;
+    font-size: 50px;
+	color: #F7C92C;
+}
+.fa {
+	padding: 10px;
+	font-size: 30px;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.5;
+}
+
+.fa-facebook {
+	font-size: 25px;
+	border-radius: 25px;
+	background: blue;
+	color: white;
+}
+.fa-youtube {
+	font-size: 25px;
+	border-radius: 25px;
+	background: #bb0000;
+	color: white;
+}
+.fa-instagram {
+	font-size: 25px;
+	border-radius: 25px;
+	background: #AB1D58;
+	color: white;
+}
+	
+/*body styling */
+body, html {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+.backgroundimage {
+	background-size: cover;
+	background-image: url("images/mainpagecity.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+
+@media only screen 
+	and (max-width : 425px) {
+	p.titlename {
+			display: none;
+		}	
+		.socialbutton{
+			text-align: center;
+			margin: 10px 0px 0px 0px;
+		}
+		.enterbutton{
+			margin: 10px auto;
+			text-align: center;
+		}
+}
+
+@media only screen 
+	and (max-width : 375px) {
+		
+		p.titlename {
+			display: none;
+		}
+		
+		.titlename img{
+			width: 75px;
+			height: 75px;
+			margin-left: 30px;
+}			
+		.socialbutton{
+			text-align: center;
+			margin: 10px 0px 0px 0px;
+		}
+		
+		.enterbutton{
+			margin: 10px auto;
+			text-align: center;
+		}
+		
+		.backgroundimage {
+	background-size: cover;
+	background-image: url("images/small main page.jpg");
+    background-position:center;
+    background-repeat: no-repeat;
+}
+}

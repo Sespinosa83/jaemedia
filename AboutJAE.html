@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me</title>
+<link href="AboutJAE.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+	<header>
+		<div class= "navbar">	
+  		<a class="active" href="AboutJAE.html">About</a>
+		<a href="JAEHome.html">My Inspiration</a>
+		</div>
+		<h1 class="titlename">
+			<a href="index.html"><img src="images/LOGO.png" alt="JAE Media"></a>
+		</h1><br>
+			<p class="photo">Photographer// Videographer// Creative Director</p>
+	</header>
+	<div class="socialbutton">
+					<a class="fa fa-facebook" href="https://www.facebook.com/JAEMedia1/" target="_blank"></a>
+					<a class="fa fa-instagram" href="https://www.instagram.com/jaemedia/" target="_blank"></a>
+					<a class="fa fa-youtube" href="https://www.youtube.com/channel/UC385ABA9eFoP82z4nWysqHg" target="_blank"></a>
+				</div>	
+					<div class="borderbottom"></div>
+	
+	<div class="slider" id="main-slider"><!-- outermost container element -->
+			<p class="main-info">
+		<h1 class="name"></h1>
+		<p>Hi There! My name is James Yu. I'm a Salt Lake City based photographer and videographer. I've been doing photography and videography for 15 years as a hobby, and professionally for the past 5 years. My clients range from individuals, to small buisnesses, and a Fortune 100 Company. My work has brought their brands to life on social media as well as improved corprate internal communications. I am known for my story-telling skills through visuals that engage the audience</p> 
+		<p>I tell your story using visual mediums to engage YOUR audience</p> 
+		<p>I currently work in FinTech as my day job while simultaneously working on my MBA. When I'm not tied up with those, I really enjoy Long Track Speedskating and the thrill it beings to be able to go fast on my own power. At home, I love spending time wirh my two daughters, AliChere and Emmarie, and I try to take them traveling as much as possible.</p>  
+      
+    <p></p></p>
+	<div class="slider-wrapper"><!-- innermost wrapper element -->
+		<img class="slide" src="images/42189646_690957847953958_4508918166280393484_n.jpg" alt="First"/>
+		<img class="slide" src="images/42802574_329478094476495_471656054489665979_n.jpg" alt="Second"/>
+		<img class="slide" src="images/43102597_1168010030012819_3864526159593719357_n.jpg" alt="Third"/>
+		<img class="slide" src="images/43240597_317940085704037_4368921488368374059_n.jpg" alt="Fourth"/>
+		<img class="slide" src="images/43551078_2070486773001503_8063874308194734651_n.jpg" alt="Fith"/>
+		<img class="slide" src="images/43712801_262331434475902_5767574881335731698_n.jpg" alt="Sixth"/>
+		<img class="slide" src="images/43068108_276965249818409_6385548262121063388_n.jpg" alt="Seventh"/>
+		<img class="slide" src="images/43816371_328792977887314_7083410866589548630_n.jpg" alt="Eighth"/>
+	</div>
+</div>	
+		
+	<script>
+	(function() {
+	
+	function Slideshow( element ) {
+		this.el = document.querySelector( element );
+		this.init();
+	}
+	
+	Slideshow.prototype = {
+		init: function() {
+			this.wrapper = this.el.querySelector( ".slider-wrapper" );
+			this.slides = this.el.querySelectorAll( ".slide" );
+			this.previous = this.el.querySelector( ".slider-previous" );
+			this.next = this.el.querySelector( ".slider-next" );
+			this.index = 0;
+			this.total = this.slides.length;
+			this.timer = null;
+			this.action();
+			this.stopStart();	
+		},
+		_slideTo: function( slide ) {
+			var currentSlide = this.slides[slide];
+			currentSlide.style.opacity = 1;
+			
+			for( var i = 0; i < this.slides.length; i++ ) {
+				var slide = this.slides[i];
+				if( slide !== currentSlide ) {
+					slide.style.opacity = 0;
+				}
+			}
+		},
+		action: function() {
+			var self = this;
+			self.timer = setInterval(function() {
+				self.index++;
+				if( self.index == self.slides.length ) {
+					self.index = 0;
+				}
+				self._slideTo( self.index );	
+			}, 3000);
+		},
+		stopStart: function() {
+			var self = this;
+			self.el.addEventListener( "mouseover", function() {
+				clearInterval( self.timer );
+				self.timer = null;
+			}, false);
+			self.el.addEventListener( "mouseout", function() {
+				self.action();
+			}, false);
+		}
+	};
+	document.addEventListener( "DOMContentLoaded", function() {
+		var slider = new Slideshow( "#main-slider" );
+	});
+})();
+</script>
+	
+	<footer>
+		<div class="foot">Site created by Steve Espinosa</div>
+	</footer>
+	</body>
+	
+</html>

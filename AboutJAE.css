@@ -1,0 +1,320 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+* {
+	box-sizing:border-box;
+  font-family: Baskerville, "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+body
+	{
+	background-color: black;
+	width: 100%;
+	}
+
+p {
+	width: 100%;
+	margin-left: 0px;
+	color: white;
+	font-size: 20px;
+}
+p.photo{
+	text-align: center;
+}
+
+h1{
+	color: goldenrod;
+	margin-left: 30px;
+	margin-bottom: 0;
+	font-size: 30px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar{
+	margin-right: 50px;
+}
+
+.navbar a {
+  float: right;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  color: darkgoldenrod;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  color: darkgoldenrod;
+}
+
+.socialbutton{
+	display: block;
+	padding-top: 10px;
+	text-align: center;
+}
+.socialbutton .fa {
+	padding: 10px;
+	font-size: 45px;
+	width: 40px;
+	height: 40px;
+	text-align: center;
+	text-decoration: none;
+	margin: 5px 2px;
+}
+
+.socialbutton .fa:hover {
+    opacity: 0.5;
+}
+
+.socialbutton .fa-facebook {
+	font-size: 20px;
+	border-radius: 20px;
+	background: blue;
+	color: white;
+}
+.socialbutton .fa-youtube {
+	font-size: 20px;
+	border-radius: 20px;
+	background: #bb0000;
+	color: white;
+}
+.socialbutton .fa-instagram {
+	font-size: 20px;
+	border-radius: 20px;
+	background: #AB1D58;
+	color: white;
+}
+
+.footer {
+  width:95%;
+  height:50px;
+  margin:0px auto;
+  overflow:hidden;
+  border-top:1px solid #ccc;
+}
+
+.copy {
+    float:right;
+    font-style:italic;
+    color:#888;
+    padding: 1% 1% 0 0;
+  }
+.main-photo {
+	height: 300px;
+	width: 300px;
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+	padding: 10px;
+}
+
+.name {
+	text-align: center;
+	border-bottom: 1px solid #ccc;
+	margin: 0;
+}
+
+footer {
+	margin-top: 60px;
+	width:auto;
+	border-top:1px solid #ccc;
+	font-style:italic;
+    color:#888;
+}
+.foot{
+	padding-top: .5em;
+	margin-left: 80%
+	
+}
+
+#main-slider{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.titlename img{
+	width: 100px;
+	height: 100px;
+	border-radius: 10px 10px;
+}
+
+img.slide {
+	margin-left: 200px;
+	margin-right: 0px;
+}
+
+.slider {
+	width: 50%;
+	margin: 2em 0 2em 10em;
+	
+}
+
+.slider-wrapper {
+	width: 350px;
+	height: 250px;
+	position: relative;
+}
+
+.slide {
+	position: absolute;
+	width: 100%;
+	height: 300px;
+	transition: opacity 3s linear;
+}
+
+.slider-wrapper > .slide:first-child {
+	opacity: 1;
+}
+
+/*-------------styling for mobile devices------------------- */
+@media only screen 
+	and (max-width : 1024px){
+		
+		p.titledes{
+			margin: 0;
+			text-align: center;
+			font-size: 30px;
+			color: goldenrod;
+		}
+		.navbar a{
+			font-size: 30px;
+		}
+		img.slide{
+			padding: 0;
+			margin-left: 250px;
+		}
+		.titlename img{
+			width: 100px;
+			height: 100px;
+}
+		#main-slider{
+			width: 80%;
+		}
+		p.photo{
+			text-align: center;
+		}
+		p{
+			margin-top: 10px;
+			font-size: 25px;
+		}
+		
+}
+
+@media only screen 
+	and (max-width : 768px){
+		
+		img.slide{
+			padding: 0;
+			margin-left: 120px;
+		}
+		.titlename img{
+			width: 100px;
+			height: 100px;
+}
+		p.titledes{
+			text-align: center;
+		}
+		p.photo{
+			text-align: center;
+		}
+		p{
+			margin: 10px 0px;
+		}
+		#main-slider{
+			width: 80%;	
+		}
+		.foot{
+			width: auto;
+			margin-left: 550px;
+		}
+}
+
+@media only screen 
+	and (max-width : 430px){ 	
+		
+body{
+	width: auto;
+	height: auto;
+		}
+
+h1.titlename {
+	text-align: center;
+		}
+		
+#main-slider{
+	width: 100%;
+		}
+		
+p.photo{
+	font-size: 30px;
+    text-align: center;
+    width: 100%;
+		}		
+		
+p.titledes {
+	text-align: center;
+	width: 75%;
+	margin-left: 50px;
+	margin-bottom: 0;
+		}
+		
+.navbar{
+	padding-bottom: 10px;
+	height: 15px;
+	margin-right: 0px;
+}
+		
+.navbar a {
+  color: white;
+  padding: 2px 5px;
+  text-decoration: underline;
+  font-size: 25px;
+}
+		
+p{
+	width: auto;
+	color: lightgray;
+		}
+
+.slide {
+	width: 100%;
+	height: 100%;
+	margin-top: auto;
+		}
+		
+.slider{
+	margin: 0 auto;
+		}
+		.slider-wrapper{
+			margin-left: 0;
+		}		
+
+.copy{
+	float: none;
+		}
+		
+.foot {
+    text-align:center;
+	margin-top: 10px;
+    height:20px;
+	margin-left: inherit;
+}
+.active{
+	display: none
+		}
+img.slide {
+	padding-left: 30px;
+	padding-right: 30px;
+	height: 300px;
+	margin-left: 0;
+		}
+		.titlename img{
+			width: 75px;
+			height: 75px;
+}
+}
